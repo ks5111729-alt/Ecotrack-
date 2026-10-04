@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoTrack - Smart Environmental Tracking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">🌱 EcoTrack</div>
+    <div class="tagline">Track Your Green Habits, Save the Planet.</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Smart Environmental Assistant</h1>
+      <p>Describe an environmental problem and get a quick category, solution and action plan.</p>
+    </section>
+
+    <section class="card">
+      <label for="problem">Describe your environmental problem</label>
+      <textarea id="problem" placeholder="Example: There is too much plastic waste in my area..."></textarea>
+      <button onclick="analyzeProblem()">🤖 Analyze with EcoTrack AI</button>
+      <p id="error" class="error"></p>
+    </section>
+
+    <section id="result" class="result hidden">
+      <div class="result-grid">
+        <div class="result-card">
+          <h3>🌍 Category</h3>
+          <p id="category"></p>
+        </div>
+        <div class="result-card">
+          <h3>💡 Recommendation</h3>
+          <p id="recommendation"></p>
+        </div>
+        <div class="result-card">
+          <h3>⚡ Immediate Action Plan</h3>
+          <ul id="actions"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="tips">
+      <h2>♻️ Eco Tips</h2>
+      <div class="tips-grid">
+        <div>💧 Save water by fixing leaks and avoiding unnecessary use.</div>
+        <div>♻️ Reduce, reuse and recycle whenever possible.</div>
+        <div>🌳 Prefer reusable products and protect green spaces.</div>
+        <div>🚲 Walk, cycle or use public transport when practical.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Small Actions. Smarter Choices. Bigger Environmental Impact.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
